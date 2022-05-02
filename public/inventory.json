@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "name": "Apple MacBook Air",
+        "price": "$999",
+        "description": "The Apple MacBook Air (M1, 2020) isn't just the best laptop Apple has ever made, it's the best laptop money can buy right now. This is the first time a MacBook has topped our list, but the MacBook Air (M1, 2020) is worthy of this spot.",
+        "img": "https://cdn.mos.cms.futurecdn.net/PrmAmoof7cFMnHNCXsbTQB-1366-80.jpg",
+        "quantity": 2,
+        "supplier name": "Apple"
+    },
+    {
+        "id": 2,
+        "name": "Microsoft Surface Laptop 4",
+        "price": "$1299",
+        "description": "While Apple blew us away with the new MacBook Air (above), arch rival Microsoft has also impressed us with its new Surface Laptop 4, landing straight in at number 2. With previous Surface devices, build quality and design is absolutely top-notch. ",
+        "img": "https://cdn.mos.cms.futurecdn.net/nVkBk7kaJAZ6JpTgKrnqCJ-1366-80.jpg",
+        "quantity": 1,
+        "supplier name": "Microsoft"
+    },
+    {
+        "id": 3,
+        "name": " MacBook Pro",
+        "price": "$1299",
+        "description": "The powerful MacBook Pro 14-inch is easily the best productivity laptop you can buy in 2022. For creative professionals such as photographers, video editors and music producers, the MacBook Pro 14-inch (2021) is a dream to use.",
+        "img": "https://cdn.mos.cms.futurecdn.net/L39mpZcwttXjEqZLXL7rpA.jpg",
+        "quantity": 1,
+        "supplier name": "Apple"
+    },
+    {
+        "id": 4,
+        "name": "HP Spectre x360",
+        "price": "$1000",
+        "description": "Now coming with 11th-generation Intel Core processors, which offer a decent performance boost, and feature better integrated Intel Iris Xe graphics, the HP Spectre x360 (2021) is better than ever.",
+        "img": "https://cdn.mos.cms.futurecdn.net/mJgiToiybYhXXt5T6DXyBU-1366-80.jpg",
+        "quantity": 1,
+        "supplier name": "Hp"
+    },
+    {
+        "id": 5,
+        "name": "Dell XPS 13 ",
+        "price": "$1,619",
+        "description": "At this point, we doubt that the Dell XPS line can do anything wrong. Its yearly updates have consistently made it into our best laptops list, and they’re only getting better. The Dell XPS 13 (2020) is not only a gorgeous piece of kit.",
+        "img": "https://cdn.mos.cms.futurecdn.net/J7i2ggjqL6oyKw82owevS-1366-80.jpgp/5.jpg",
+        "quantity": 1,
+        "supplier name": "Dell"
+    },
+    {
+        "id": 6,
+        "name": "Razer Blade 14",
+        "price": "$2,799",
+        "description": "This luxurious thin and light gaming laptop from Razer just oozes class, and is an ideal laptop for people who want a gaming device they can take around with them. In our Razer Blade 14 review, we called it the gaming laptop.",
+        "img": "https://cdn.mos.cms.futurecdn.net/zACxYU3xuD5pRnJjUKDNGF-1366-80.jpg",
+        "quantity": 1,
+        "supplier name": "Razer"
+    },
+    {
+        "id": 7,
+        "name": "LG Gram 17",
+        "price": "$1,799",
+        "description": "That includes Intel's new 11th generation processors and Iris Xe graphics as well as two Thunderbolt 4 USB-C ports, and coupled with up to 16GB of RAM and speedy SSDs, means this is a laptop that is brilliant for day-to-day tasks.",
+        "img": "https://cdn.mos.cms.futurecdn.net/UqNT2QcyVoMbUBL8QPhCCH-1366-80.jpg",
+        "quantity": 1,
+        "supplier name": "LG"
+    },
+    {
+        "id": 8,
+        "name": "Acer Swift 3",
+        "price": "$799",
+        "description": "Beyond the Acer Swift 3's modest exterior, you'll find an excellent laptop that boasts plenty of power for work and study. The Swift 3 (not to be confused with the Switch 3 another laptop from Acer) is an inexpensive laptop.",
+        "img": "https://cdn.mos.cms.futurecdn.net/kn63SWKHbsMU2CwJTrXNxW-1366-80.jpg",
+        "quantity": 1,
+        "supplier name": "Acer"
+    },
+    {
+        "id": 9,
+        "name": "Asus ZenBook 13",
+        "price": "$999",
+        "description": "The Asus ZenBook 13 is a brilliant laptop, and the 2021 model comes with some of the best mobile tech you'll find in a modern notebook. So, it packs a choice of an AMD Ryzen 5000 series processor, or Intel 11th gen CPU.",
+        "img": "https://cdn.mos.cms.futurecdn.net/NCLHdo8CbmWQgG3TwqaJKo-1366-80.jpg",
+        "quantity": 1,
+        "supplier name": "Asus"
+    },
+    {
+        "id": 10,
+        "name": "Asus TUF Dash F15",
+        "price": "$1,509.",
+        "description": "While we weren't too jazzed with its keyboard and trackpad in our review, its excellent build quality, brilliant battery for a gaming laptop, and impressively thin and light design makes it a brilliant value gaming laptop.",
+        "img": "https://cdn.mos.cms.futurecdn.net/GfWZ7QjCgD6mtHYz4ey9kJ-1366-80.jpg",
+        "quantity": 1,
+        "supplier name": "Asus"
+    },
+    {
+        "id": 11,
+        "name": "Lenovo ThinkPad X1",
+        "price": "$3,079",
+        "description": "The Lenovo ThinkPad X1 Yoga Gen 6 is the latest refresh for Lenovo's flagship 2-in-1 business laptop and the addition of Intel's 11th-gen Tiger Lake processors with Iris Xe graphics, along with Intel Evo certification.",
+        "img": "https://cdn.mos.cms.futurecdn.net/xVnyevxmyhZLMuMyRAf2kn-1366-80.jpg",
+        "quantity": 1,
+        "supplier name": "Lenovo"
+    },
+    {
+        "id": 12,
+        "name": "Google Pixelbook Go",
+        "price": "$1,539",
+        "description": "Google's Pixelbook Go is the best Chromebook money can buy right now, with the company showing everyone else how it's done. Its previous Chromebook, the Pixelbook, was a brilliant Chromebook in its own way, but it cost a small fortune.",
+        "img": "https://cdn.mos.cms.futurecdn.net/V6gmMwBskKpTzauvV8eFH7-1366-80.jpg",
+        "quantity": 1,
+        "supplier name": "google"
+    }
+]
