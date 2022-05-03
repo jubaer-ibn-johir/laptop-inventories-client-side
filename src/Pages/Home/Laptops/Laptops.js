@@ -19,8 +19,8 @@ const laptops = [
 ]
 const Laptops = () => {
     return (
-        <div className='container'>
-            <h2 className='text-success text-center mt-5'>Explore More</h2>
+        <div id='explore' className='container'>
+            <h2 className='text-dark text-center mt-5'>Explore More</h2>
             <div className='row laptops-style w-100 '>
                 {
                     laptops.map(laptop => <Laptop

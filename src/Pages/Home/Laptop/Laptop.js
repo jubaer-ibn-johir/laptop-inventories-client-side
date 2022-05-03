@@ -4,13 +4,13 @@ const Laptop = ({ laptop }) => {
   const { name, img } = laptop;
   return (
     <div className="card m-2 text-center col-sm-12 col-md-6 col-lg-4" style={{ width: "20rem" }}>
-      <img src={img} class="card-img-top" alt="..." />
-      <div class="card-body">
-        <h5 class="card-title">{name}</h5>
-        <p class="card-text">
+      <img src={img} className="card-img-top" alt="..." />
+      <div className="card-body">
+        <h5 className="card-title">{name}</h5>
+        <p className="card-text">
         Some of our most beloved laptops were those that dared to be different.
         </p>
-        <a href="#" class="btn btn-primary">
+        <a href="#" className="btn btn-dark">
           Explore
         </a>
       </div>

@@ -1,9 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './InventoryItem.css'
 
 
 const InventoryItem = ({inventoryItem}) => {
-    const {name, img, description, price, quantity, supplier} = inventoryItem;
+    const {id, name, img, description, price, quantity, supplier} = inventoryItem;
+    const navigate = useNavigate();
+    const navigateInventoryDetail = id => {
+        navigate(`/inventory/${id}`);
+    }
     return (
         <div className='inventory'>
             <img src={img} />
@@ -12,6 +17,7 @@ const InventoryItem = ({inventoryItem}) => {
             <p><small>Description: {description}</small> </p>
             <p>Quantity: {quantity} </p>
             <p>Supplier: {supplier}</p>
+            <button onClick={() => navigateInventoryDetail(id)} className='btn btn-dark'>Manage Updates</button>
         </div>
     );
 };

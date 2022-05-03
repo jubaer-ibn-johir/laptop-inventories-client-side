@@ -12,8 +12,8 @@ const InventoryItems = () => {
     },[])
 
     return (
-        <div>
-            <h2 className='services-title'> Inventory Items: {inventoryItems.length}</h2>
+        <div id='inventories'>
+            <h2 className='services-title mt-5'> Inventory Items: {inventoryItems.length}</h2>
             <div className='services-container'>
             {
                 inventoryItems.map(inventoryItem => <InventoryItem

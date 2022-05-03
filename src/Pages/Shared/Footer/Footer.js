@@ -3,7 +3,7 @@ import './Footer.css'
 
 const Footer = () => {
     return (
-        <footer className='footer'>
+        <footer className='footer mt-5'>
              <p> Copyright &copy;2022-<script>document.write(new Date().getFullYear())</script> Laptop Services All Rights Reserved</p>
      
         </footer>
