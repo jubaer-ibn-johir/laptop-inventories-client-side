@@ -1,9 +1,17 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../../firebase.init';
 import logo from '../../../images/logo/logo-1.png';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+
+    const handleSignOut = () =>{
+        signOut(auth);
+    }
     return (
         <>
         
@@ -15,8 +23,8 @@ const Header = () => {
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
-      <Nav.Link href="home#inventories">Inventory Items</Nav.Link>
-      <Nav.Link href="home#explore">Explore</Nav.Link>
+      <Nav.Link className='text-white' href="home#inventories">Inventory Items</Nav.Link>
+      <Nav.Link className='text-white' href="home#explore">Explore</Nav.Link>
       <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
         <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
@@ -26,10 +34,14 @@ const Header = () => {
       </NavDropdown>
     </Nav>
     <Nav>
-      <Nav.Link as={Link} to="/about">About</Nav.Link>
-      <Nav.Link as={Link} to="/login">
+      <Nav.Link className='text-white' as={Link} to="/about">About</Nav.Link>
+      {
+          user ?
+            <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Sign Out</button>
+          :
+          <Nav.Link as={Link} to="/login">
         Login
-      </Nav.Link>
+      </Nav.Link>}
     </Nav>
   </Navbar.Collapse>
   </Container>
