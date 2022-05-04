@@ -19,6 +19,7 @@ const Header = () => {
   <Container>
   <Navbar.Brand as={Link}  to="/">
       <img src={logo} height='35' ></img>
+      Laptop Inventories
   </Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
@@ -34,20 +35,18 @@ const Header = () => {
       </NavDropdown>
     </Nav>
     <Nav>
-      <Nav.Link className='text-white' as={Link} to="/about">About</Nav.Link>
+      <Nav.Link className='text-white' as={Link} to="/blogs">Blogs</Nav.Link>
       {
           user ?
-            <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Sign Out</button>
+            <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>Log Out</button>
           :
-          <Nav.Link as={Link} to="/login">
+          <Nav.Link className='text-white' as={Link} to="/login">
         Login
       </Nav.Link>}
     </Nav>
   </Navbar.Collapse>
   </Container>
 </Navbar>
-  
-  <h1 className='text-center mt-3'>Laptops Inventories</h1>
 </>
     );
 };
