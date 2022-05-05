@@ -1,14 +1,27 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import useInventories from '../../../hooks/useInventories';
 import './ManageInventory.css'
 
 const ManageInventory = ({manageInventory}) => {
-
-    
-        const { _id, name, img, description, price, quantity, supplier} = manageInventory;
-        const navigate = useNavigate();
-        const navigateInventoryDetail = id => {
-            // navigate(`/inventory/${id}`);
+    const [inventoryItems, setInventoryItems] = useInventories();
+    const { _id, name, img, description, price, quantity, supplier} = manageInventory;
+        
+        const handleDelete = id => {
+            const proceed = window.confirm('Are you sure?');
+            if(proceed){
+                const url = `http://localhost:5000/inventory/${id}`;
+                fetch(url, {
+                    method: 'DELETE'
+                })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remaining = inventoryItems.filter( manageInventory._id !== id );
+                    setInventoryItems(remaining);
+                })
+            }
+            
         }
     return (
         <div className='inventory'>
@@ -18,7 +31,7 @@ const ManageInventory = ({manageInventory}) => {
             <p><small>Description: {description}</small> </p>
             <p>Quantity: {quantity} </p>
             <p>Supplier: {supplier}</p>
-            <button onClick={() => navigateInventoryDetail(_id)} className='btn btn-dark'>Delete</button>
+            <button onClick={() => handleDelete(_id)} className='btn btn-dark'>Delete</button>
         </div>
     );
 };

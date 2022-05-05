@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import useInventories from '../../../hooks/useInventories';
 import ManageInventory from '../ManageInventory/ManageInventory'
 import './ManageInventories.css'
 
 const ManageInventories = () => {
     const [manageItems, setManageItems] = useState([]);
+    // const [inventoryItems] = useInventories();
     const navigate = useNavigate();
 
     const AddNewItem = (event) => {
@@ -27,7 +29,9 @@ const ManageInventories = () => {
                 manageInventory={manageInventory}
                 
                 
-                ></ManageInventory> )
+                >
+                    
+                </ManageInventory> )
             }
             </div>
         </div>
