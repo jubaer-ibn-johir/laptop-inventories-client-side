@@ -28,7 +28,7 @@ const InventoryDetail = () => {
             <h6>Quantity: {inventory.quantity}</h6>
             <h6>Supplier: {inventory.supplier}</h6>
             <h6>price: {inventory.price}</h6>
-            <Button variant="dark">DELETE</Button>
+            <Button variant="dark">Delivered</Button>
           </Card.Body>
         </Card>
       </div>
