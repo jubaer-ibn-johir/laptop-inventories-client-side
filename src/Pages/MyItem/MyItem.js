@@ -3,7 +3,7 @@ import React from 'react';
 const MyItem = () => {
     return (
         <div>
-            <h2>This is my Item</h2>
+            <h2 className='text-center'> Items are Empty right now</h2>
             
         </div>
     );

@@ -9,7 +9,7 @@ const AddNewItem = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    const url = `http://localhost:5000/inventory`;
+    const url = `https://mighty-sea-35286.herokuapp.com/inventory`;
     fetch(url, {
       method: "POST",
       headers: {
@@ -36,13 +36,13 @@ const AddNewItem = () => {
           placeholder="Name"
           {...register("name", { required: true, maxLength: 20 })}
         />
-        <input
+        {/* <input
           className="mb-2"
           placeholder="Email"
           value={user.email}
           readOnly disabled
           {...register("email", { required: true, maxLength: 20 })}
-        />
+        /> */}
         <textarea
           className="mb-2"
           placeholder="Description"

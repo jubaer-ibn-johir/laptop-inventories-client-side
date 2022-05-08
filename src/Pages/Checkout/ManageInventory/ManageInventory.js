@@ -9,8 +9,8 @@ const ManageInventory = ({manageInventory}) => {
         
         const handleDelete = id => {
             const proceed = window.confirm('Are you sure?');
-            if(proceed){
-                const url = `http://localhost:5000/inventory/${id}`;
+            if(proceed ){
+                const url = `https://mighty-sea-35286.herokuapp.com/inventory/${id}`;
                 fetch(url, {
                     method: 'DELETE'
                 })
@@ -21,6 +21,7 @@ const ManageInventory = ({manageInventory}) => {
                     setInventoryItems(remaining);
                 })
             }
+           
             
         }
     return (
