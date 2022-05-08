@@ -39,7 +39,7 @@ function App() {
             <Checkout></Checkout>
           </RequireAuth>
         }></Route>
-        <Route path='/addnew' element={
+        <Route path='/addnew/:inventoryId' element={
           <RequireAuth>
             <AddNewItem></AddNewItem>
           </RequireAuth>

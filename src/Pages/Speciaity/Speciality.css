@@ -1,0 +1,42 @@
+.special-text {
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+
+.speciality {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 576px) {
+  .speciality{
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.doyouknow {
+  margin: 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+};
+
+
+
+.doyouknow {
+  margin: 40px;
+}
+
+.extra-section{
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin: 40px;
+};
+
+@media only screen and (max-width: 576px) {
+  .doyouknow{
+      grid-template-columns: repeat(1, 1fr);
+  }
+}
